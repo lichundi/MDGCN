@@ -12,7 +12,7 @@ class GetInst_A(object):
         self.sp_num = np.array(np.max(self.useful_sp_lab), dtype='int')
         gt = np.array(gt, dtype='int')
         self.gt1d = np.reshape(gt, [self.r*self.c])
-        self.gt_tr = np.array(np.zeros([self.r*self.c]), dtype='int')
+        self.gt_tr = np.array(np.zeros([self.r*self.c]), dtype='int') 
         self.gt_te = self.gt1d
         trpos = np.array(trpos, dtype='int')
         self.trpos = (trpos[:,0]-1)*self.c+trpos[:,1]-1
